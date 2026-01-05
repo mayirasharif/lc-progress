@@ -73,8 +73,6 @@ class Solution:
 
         if numNegative(matrix) % 2 == 0:
             return findAbsSum(matrix)
-        elif findAbsSum(matrix) == findSum(matrix):
-            return findAbsSum(matrix)
         else:
             minVal = turnPositive(matrix)
             return findSum(matrix)
